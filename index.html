@@ -393,10 +393,10 @@
                 data.partners.forEach(partner => {
                     const partnerCard = `
                     
-                        <div class="col-md-8 col-lg-8 col-sm-12 partner-card" data-category="${partner.category}">
+                        <div class="col-md-8 col-lg-8 col-sm-12 partner-card" data-category="${partner.category}" style="margin-bottom: 18px;">
                             <div class="card" style="width: 100%; height: auto; border: none; background: none;">
                                 <div class="row align-items-center" style="margin: 4px 4px;">
-                                    <img src="${partner.image}" class="card-img-logo col-md-12 col-lg-3 col-sm-12" alt="${partner.name}" style="max-width: 75%; max-height: 200px; object-fit: contain;">
+                                    <img src="${partner.image}" class="card-img-logo col-md-12 col-lg-3 col-sm-12" alt="${partner.name}" style="max-width: 100%; max-height: 200px; object-fit: contain;">
                                     <div class="card-body col-md-8 col-lg-8 col-sm-12">
                                         <div class="row">
                                             <div class="col-md-6 col-lg-6 col-sm-6">
@@ -404,8 +404,8 @@
                                             </div>
                                             <div class="col-md-6 col-lg-6 col-sm-6">
                                                 <div class="tags">
-                                                    <ul class="tags-list" style="display: flex; list-style: none; padding: 0;">
-                                                        ${partner.tags.map(tag => `<li class="tag" style="font-size: 12px; display: inline-block; margin: 5px 5px; padding: 2px 4px; border-radius: 10px; margin-right: 5px;">${tag}</li>`).join('')}
+                                                    <ul class="tags-list" style="display: flex; list-style: none; padding: 0; gap: 4px;">
+                                                        ${partner.tags.map(tag => `<li class="badge rounded-pill bg-primary" style="font-size: 10px; display: flex; margin-bottom: 4px;">${tag}</li>`).join('')}
                                                         
                                                     </ul>
                                                 </div>

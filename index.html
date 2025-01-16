@@ -25,7 +25,7 @@
 
         .top-bar {
             background-color: var(--primary-blue);
-            color: white;
+            color: rgb(46, 136, 189);
             padding: 5px 0;
             font-size: 14px;
         }
@@ -89,21 +89,36 @@
         }
 
         .partner-card {
-            background: rgba(255, 255, 255, 0.062);
+            background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.062), rgba(184, 184, 184, 0.39));
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 3px solid rgba(255, 255, 255, 0.2);
             padding: 2rem;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-            
-            width: 100%;
+            box-shadow: 0 8px 32px 0 rgba(28, 38, 187, 0.274);
+            margin-left: 5%;
+            width: 90%;
             transform: translateY(0);
             transition: transform 0.3s ease;
+            border-style: inset;
         }
 
         .partner-card.hidden {
             display: none;
+        }
+
+        .btn-primary {
+            background: rgba(238, 247, 253, 0.322);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 22px 0 rgba(31, 38, 135, 0.15);
+            color: rgb(53, 81, 240);
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
         .tag {
@@ -417,7 +432,7 @@
                                                 <p class="card-text"><small class="text-muted">${partner.address}</small></p>
                                                 <p class="card-text"><small class="text-muted"><i class="fas fa-phone"></i> ${partner.phone}</small></p>
                                                 
-                                                <a href="http://${partner.website}" class="btn btn-primary" target="_blank" style="display: flex; justify-content: center; align-items: center; width: 100%; background-color: var(--primary-blue); color: white; margin-bottom: 16px;">Visit Website</a>
+                                                <a href="http://${partner.website}" class="btn btn-primary" target="_blank" style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 16px;">Visit Website</a>
                                             </div>
                                             <div class="col-md-6 col-lg-3 col-sm-12">
                                                 

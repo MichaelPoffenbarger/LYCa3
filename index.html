@@ -96,8 +96,8 @@
             border: 3px solid rgba(255, 255, 255, 0.2);
             padding: 2rem;
             box-shadow: 0 8px 32px 0 rgba(28, 38, 187, 0.274);
-            margin-left: 5%;
-            width: 90%;
+            margin-left: 2%;
+            width: 96%;
             transform: translateY(0);
             transition: transform 0.3s ease;
             border-style: inset;
@@ -108,17 +108,23 @@
         }
 
         .btn-primary {
-            background: rgba(238, 247, 253, 0.322);
+            background: var(--primary-blue);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 10px 20px;
             border-radius: 20px;
             box-shadow: 0 2px 22px 0 rgba(31, 38, 135, 0.15);
-            color: rgb(53, 81, 240);
+            color: rgb(255, 255, 255);
             font-size: 16px;
             font-weight: bold;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 22px 0 rgba(46, 46, 46, 0.425);
+        }
+
+        .btn-primary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: rgb(0, 0, 0);
         }
 
         .tag {
@@ -441,7 +447,7 @@
                                                 <div class="social-icons" style="margin-bottom: 12px;">
                                                     <a href="${partner.facebook}" target="_blank" style="margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
                                                     <a href="${partner.instagram}" target="_blank" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
-                                                    <a href="${partner.twitter}" target="_blank" style="margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

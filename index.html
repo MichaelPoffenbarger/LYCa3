@@ -77,6 +77,14 @@
             color: rgb(19, 54, 209);
             position: relative;
             overflow: hidden;
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 1s forwards; /* Apply fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Fade to fully visible */
+            }
         }
 
         h5 {
@@ -329,7 +337,10 @@
     
 
     <!-- Hero Banner -->
-    
+    <div class="hero-banner">
+        <h1>Welcome to Love Your City Partners</h1>
+        <p>Your trusted partners in community service.</p>
+    </div>
 
     <!-- Main Content -->
     <div class="container my-5 d-flex">
@@ -348,6 +359,7 @@
                 <button class="filter-btn" data-category="media & marketing">Media & Marketing</button>
                 <button class="filter-btn" data-category="church partners">Church Partners</button>
                 <button class="filter-btn" data-category="other trades & services">Other Trades & Services</button>
+                <button class="filter-btn" data-category="retail">Retail</button>
             </div>
         </div>
 
